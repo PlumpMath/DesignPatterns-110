@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="f4cbd06a-eee5-464c-ad86-5f4cc02db900" name="UMLClassDiagram" linkedPackageId="4449e04a-39a5-4600-b741-257661bea285" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="bebd9ace-5111-4d86-97a3-ad663e322888">
+      <profileInstance Id="77dd8754-df3f-4e34-af31-41d4645d4493" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1d7ab996-8e26-4503-8a2f-8eefee260646">
+      <profileInstance Id="38ee3ea1-2210-45db-964e-da80703842a7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="09cc4645-899c-45ad-9029-20a12846d8e6" name="Colleague" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9056b8ac-c1cd-4bfe-baea-26650b4400b6" />
+        <targetEnds>
+          <association Id="c3be031d-e865-425f-8c49-a7e9c8b970b0" isDerived="false" sourceEndRoleName="Colleague" targetEndRoleName="Mediator" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e3010ff4-271b-4605-8f1f-4e74c302e6ff" LastKnownName="Mediator" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb54c0aa-37d8-4627-9a81-e9f51d30b0d6" name="Colleague" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="347b3adf-2d63-4b74-9fc0-105fa0f6ed9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd39151a-b8f8-4824-a912-073d4fb31a9b" name="Mediator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="032b37f7-319b-474e-bf37-18e0c31a7037" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a7d69779-2edb-4491-8c75-c38b5e7ab9fb" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cae03cc9-5a37-4643-a78f-cd167e8e037a" name="ConcreteColleagueA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6723ae75-6059-42eb-907c-a92d6dfeac51" />
+        <generalsInternal>
+          <generalization Id="817f1f26-6896-4d5f-8e5f-fd42fbc5834f" isSubstitutable="false">
+            <classMoniker Id="09cc4645-899c-45ad-9029-20a12846d8e6" LastKnownName="Colleague" />
+            <elementDefinition Id="d0679342-3956-45aa-87a7-80d41de45bc9" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e3010ff4-271b-4605-8f1f-4e74c302e6ff" name="Mediator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c21f8fbb-c525-4f7c-82f6-f9d7416aa051" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6a478abc-7b7a-49ae-8f40-1117104c8017" name="ConcreteMediator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f8af252c-5b62-4f8c-aff6-48c6ec794643" />
+        <generalsInternal>
+          <generalization Id="af0919a4-f46e-4de3-97ee-7878fcae3eb5" isSubstitutable="false">
+            <classMoniker Id="e3010ff4-271b-4605-8f1f-4e74c302e6ff" LastKnownName="Mediator" />
+            <elementDefinition Id="2c7e72e5-1fcf-4f89-8a53-7baf8e0fb75c" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="81750f5a-ac96-4482-99b3-752733af0b91" isDerived="false" sourceEndRoleName="ConcreteMediator" targetEndRoleName="ConcreteColleagueA" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cae03cc9-5a37-4643-a78f-cd167e8e037a" LastKnownName="ConcreteColleagueA" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18eea9be-f69f-49b4-a0fb-0033fed247ab" name="ConcreteMediator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="76678e4f-72b6-4ffe-9b0c-f5b78698e0c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="292b4013-6c63-4249-9ac7-f46a7b04c8a0" name="ConcreteColleagueA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b4c579c4-2793-4132-b324-10416107d06b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e8dd3831-1040-4ea4-984b-fd6eb47ea220" />
+          </association>
+          <association Id="7eb2f101-4873-404c-8c63-c63df5f60adb" isDerived="false" sourceEndRoleName="ConcreteMediator" targetEndRoleName="ConcreteColleagueB" isLeaf="false" isAbstract="false">
+            <classMoniker Id="22c3e69d-fd9c-40f5-a3f5-9485b5a7903b" LastKnownName="ConcreteColleagueB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90ba509b-741a-46f7-a01b-7c563c380a43" name="ConcreteMediator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="93c931b4-96ad-4018-a0ba-d22276bfa1f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6fe1544e-35ed-4158-b8c4-3c63b87a6543" name="ConcreteColleagueB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ded6e41-e1b2-496f-a7be-c6a0e3ce3202" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db85410f-9f3a-4498-90bf-a0124235fa25" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="22c3e69d-fd9c-40f5-a3f5-9485b5a7903b" name="ConcreteColleagueB" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6f96a38d-f50c-4fb1-9dfd-bc633afa9e51" />
+        <generalsInternal>
+          <generalization Id="224c1f22-663e-4a5c-874b-c347dc36853c" isSubstitutable="false">
+            <classMoniker Id="09cc4645-899c-45ad-9029-20a12846d8e6" LastKnownName="Colleague" />
+            <elementDefinition Id="2aa96190-3042-4126-a3e5-b29d216bc378" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="4449e04a-39a5-4600-b741-257661bea285" name="MediatorModelingProject">
+    <elementDefinition Id="03012c66-6712-4746-af97-3c29b4994eb3" />
+  </package>
+</logicalClassDesignerModel>

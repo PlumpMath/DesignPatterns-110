@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="927c0abf-3e7d-43d8-a698-116f4178f2d7" name="UMLClassDiagram" linkedPackageId="72434037-57ec-437d-bf23-a453fb2464a4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4df2a0b7-0281-4827-94d9-efefea4dc37f">
+      <profileInstance Id="a7093753-a8f9-4710-b94e-0dd7af1cb443" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fabe5cb1-f219-43b1-b154-aa924a76c0d0">
+      <profileInstance Id="b99be80b-03b3-45fe-890c-d2df401e1624" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0893f9e9-bea1-4906-8b64-1cc8aa89ba33" name="State" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e4a7f0a5-ff69-43a0-ae32-10aefd2f6ae9" />
+        <ownedOperationsInternal>
+          <operation Id="8b52a96e-c6a9-49d3-9d84-ff5c9f9051fd" name="Handle" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0390d4da-1116-423b-b85b-616545d4b5c7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="833265e2-847d-433a-8abd-d0071455d1fb" name="context" direction="In">
+                  <elementDefinition Id="8122db4b-20e2-4667-964d-03d04b3a0ffc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f140fc50-1ad0-4857-b9d8-f65780c8af24" LastKnownName="Context" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="df130113-3423-4abf-85c0-e1a2c7d99cfe" name="Context" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="34fcdc30-66b4-4442-9608-fc4ba61166df" />
+        <targetEnds>
+          <association Id="402a1956-99c1-432e-b5ec-149610d52763" isDerived="false" sourceEndRoleName="Context" targetEndRoleName="State" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0893f9e9-bea1-4906-8b64-1cc8aa89ba33" LastKnownName="State" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c35185ae-4860-4d6c-8b91-3faf729180c5" name="Context" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="112cf44c-6114-460f-a13e-cc9719d25edf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8f08c1b0-9b06-42ed-89c7-8797722fc339" name="State" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b0487913-dbe0-4435-87ba-ba5db0e81a97" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4db18259-7a37-43cd-97b4-85985dc3bccf" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c584b9e9-0ab7-48b4-a170-0f539857ea3a" name="State" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6e3b105d-15fc-4e97-86ea-1d0826990f97" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="efcf6ef8-d813-4f37-acc7-ec01a118f3f3" LastKnownName="State" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="f712b453-4a98-43a0-a0f2-47c123fb73db" name="Request" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c8c8a4fc-8641-4603-b49e-5b1cbfd6e5e0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="efcf6ef8-d813-4f37-acc7-ec01a118f3f3" name="State" isAbstract="false" isLeaf="false" cachedFullName="StateModelingProject::State">
+        <elementDefinition Id="e4a7f0a5-ff69-43a0-ae32-10aefd2f6ae9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f140fc50-1ad0-4857-b9d8-f65780c8af24" name="Context" isAbstract="false" isLeaf="false" cachedFullName="StateModelingProject::Context">
+        <elementDefinition Id="34fcdc30-66b4-4442-9608-fc4ba61166df" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="418bbf33-0ca7-4063-983a-901f23a3a76a" name="ConcreteStateA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6baf53ec-bf6a-4285-9d73-15df9d15658b" />
+        <generalsInternal>
+          <generalization Id="c536746a-f50e-479c-9f1f-88018f6c3956" isSubstitutable="false">
+            <classMoniker Id="0893f9e9-bea1-4906-8b64-1cc8aa89ba33" LastKnownName="State" />
+            <elementDefinition Id="bf59e400-e76b-4bcd-a284-72cac265e98e" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="7e0832dc-23a7-431e-8095-b04c61b62c4f" name="Handle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ee204082-23e0-42c5-8c0c-0615e8e9c0f7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="414715b7-4179-4cb4-88b8-fb45cfa54b58" name="context" direction="In">
+                  <elementDefinition Id="7d550ee4-c9d1-42fe-8f09-9cc3a4c4155c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="eb468089-a7b2-4d2f-843a-0b59e7ea2f07" LastKnownName="Context" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="eb468089-a7b2-4d2f-843a-0b59e7ea2f07" name="Context" isAbstract="false" isLeaf="false" cachedFullName="StateModelingProject::Context">
+        <elementDefinition Id="34fcdc30-66b4-4442-9608-fc4ba61166df" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="520e5ded-1597-4310-80d5-66dac0b137ed" name="Context" isAbstract="false" isLeaf="false" cachedFullName="StateModelingProject::Context">
+        <elementDefinition Id="34fcdc30-66b4-4442-9608-fc4ba61166df" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6cb3a07e-da86-4dfe-bdc6-9010143582aa" name="ConcreteStateB" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="93aea9c3-5a5e-404d-aaf6-9536b6e0c925" />
+        <generalsInternal>
+          <generalization Id="7dd971ae-cbfc-471b-b0d7-432441610c64" isSubstitutable="false">
+            <classMoniker Id="0893f9e9-bea1-4906-8b64-1cc8aa89ba33" LastKnownName="State" />
+            <elementDefinition Id="49861d3c-eb49-4135-80e5-a015a2c90a64" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="3051bb39-3d93-438d-b3c7-34a444ef65c5" name="Handle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c81c0a80-7ae0-46f1-966f-495cc25a85a4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1eac8098-8514-4ed9-8258-40f4e609c247" name="context" direction="In">
+                  <elementDefinition Id="f899fc3a-79b4-4587-922a-6c0db75061c9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="520e5ded-1597-4310-80d5-66dac0b137ed" LastKnownName="Context" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="72434037-57ec-437d-bf23-a453fb2464a4" name="StateModelingProject">
+    <elementDefinition Id="8add3735-ad0c-4864-8336-4190dbf24ed6" />
+  </package>
+</logicalClassDesignerModel>

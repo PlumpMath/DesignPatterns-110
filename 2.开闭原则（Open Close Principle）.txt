@@ -1,0 +1,123 @@
+1、开闭原则简介
+　　开闭原则对扩展开放，对修改关闭，开闭原则是面向对象设计中可复用设计的基石。
+
+　　2、开闭原则的实现
+　　实现开闭原则的关键就在于抽象，把系统的所有可能的行为抽象成一个抽象底层，这个抽象底层规定出所有的具体实现必须提供的方法的特征。作为系统设计的抽象层，要预见所有可能的扩展，从而使得在任何扩展情况下，系统的抽象底层不需修改；同时，由于可以从抽象底层导出一个或多个新的具体实现，可以改变系统的行为，因此系统设计对扩展是开放的。
+
+　　3、如何使用开闭原则
+　　抽象约束
+　　1>、通过接口或者抽象类约束扩展，对扩展进行边界限定，不允许出现在接口或抽象类中不存在的public方法；
+　　2>、参数类型、引用对象尽量使用接口或者抽象类，而不是实现类；
+　　3>、抽象层尽量保持稳定，一旦确定即不允许修改。
+
+　　4、开闭原则的优点
+
+　　1>、可复用性
+　　2>、可维护性
+
+　　5、开闭原则示例
+
+　　Shape.cs
+
+复制代码
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace DesignPatterns.OpenClosedPrinciple
+{
+    public abstract class Shape
+    {
+        protected string _name;
+
+        public Shape(string name)
+        {
+            this._name = name;
+        }
+
+        /// <summary>
+        /// 面积
+        /// </summary>
+        /// <returns></returns>
+        public abstract double Area();
+
+        /// <summary>
+        /// 显示
+        /// </summary>
+        public abstract void Display();
+    }
+}
+复制代码
+　　Rectangle.cs
+
+复制代码
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace DesignPatterns.OpenClosedPrinciple
+{
+    /// <summary>
+    /// 矩形
+    /// </summary>
+    public class Rectangle : Shape
+    {
+        private double _width;
+        private double _height;
+
+        public Rectangle(string name, double width, double height)
+            : base(name)
+        {
+            this._width = width;
+            this._height = height;
+        }
+
+        public override double Area()
+        {
+            return _width * _height;
+        }
+
+        public override void Display()
+        {
+            Console.WriteLine("{0} 长：{1}，宽：{2}，面积：{3}", _name, _width, _height, this.Area());
+        }
+    }
+}
+复制代码
+　　Circle.cs
+
+复制代码
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace DesignPatterns.OpenClosedPrinciple
+{
+    /// <summary>
+    /// 圆形
+    /// </summary>
+    public class Circle : Shape
+    {
+        private double _radius;
+
+        public Circle(string name, double radius)
+            : base(name)
+        {
+            this._radius = radius;
+        }
+
+        public override double Area()
+        {
+            return Math.Round(Math.PI * _radius * _radius, 2);
+        }
+
+        public override void Display()
+        {
+            Console.WriteLine("{0} 半径：{1}，面积：{2}", _name, _radius, this.Area());
+        }
+    }
+}
+复制代码

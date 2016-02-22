@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b73c4c36-fcd9-4785-8ecb-386edc5fc28e" name="UMLClassDiagram" linkedPackageId="a8204954-beb8-4b4f-bad2-2b9bdcd7f176" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f92b33fa-3c61-4399-a4fa-ea3291b1b39a">
+      <profileInstance Id="53d99dc2-7da0-4265-9ca3-dc7015ce8d1c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="227a83bb-7dfc-4739-96bc-acf5d7d03c5a">
+      <profileInstance Id="83d44f07-86ba-4b05-8194-1bb3d3a3df48" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5c16662-0c19-494c-aa5b-01b52c75cb03" name="Prototype" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2e1a3dd4-df27-4d31-b288-f859d5fcd932" />
+        <ownedOperationsInternal>
+          <operation Id="bf611a53-b72b-4b9d-a7ff-7c802b8dbab8" name="Clone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="72372d19-e3bf-45d2-88c8-5c1c970e3910" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="937815d7-1a18-4f83-becd-bac22d954b73" direction="Return">
+                  <elementDefinition Id="3f741eae-b489-4054-b2ba-9f447c615463" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1d6d0c2d-b2a3-4f2f-bf49-e67ef5aaaa2a" LastKnownName="Prototype" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="1d6d0c2d-b2a3-4f2f-bf49-e67ef5aaaa2a" name="Prototype" isAbstract="false" isLeaf="false" cachedFullName="PrototypeModelingProject::Prototype">
+        <elementDefinition Id="2e1a3dd4-df27-4d31-b288-f859d5fcd932" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="33bd36ad-9d3c-4ec2-943c-171ca7c180ab" name="ConcretePrototype1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b5c77b6f-53fa-4948-bfd9-8e1d88e89495" />
+        <generalsInternal>
+          <generalization Id="ba54b960-e1d6-47ed-ab57-d296b0badecf" isSubstitutable="false">
+            <classMoniker Id="f5c16662-0c19-494c-aa5b-01b52c75cb03" LastKnownName="Prototype" />
+            <elementDefinition Id="3cf018bb-f113-4468-9dba-d75adff80807" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="8754d0e8-4dc5-4cde-8164-be7b09ae5040" name="Clone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="30a0fe78-ece5-4e30-89f1-2a31783b14e8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9fb4b35b-5307-4906-a490-677f0438ec5f" direction="Return">
+                  <elementDefinition Id="3f678d08-08f7-4333-a4c2-a42127c67a66" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ea61122a-48a1-4bad-bdf5-a5a82cbf8a60" LastKnownName="Prototype" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ea61122a-48a1-4bad-bdf5-a5a82cbf8a60" name="Prototype" isAbstract="false" isLeaf="false" cachedFullName="PrototypeModelingProject::Prototype">
+        <elementDefinition Id="2e1a3dd4-df27-4d31-b288-f859d5fcd932" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ad11ebe0-3d2c-4088-a407-913b691bb7bb" name="Prototype" isAbstract="false" isLeaf="false" cachedFullName="PrototypeModelingProject::Prototype">
+        <elementDefinition Id="2e1a3dd4-df27-4d31-b288-f859d5fcd932" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="311ce605-fcb5-4b3d-b84b-ceb0b44d9c3c" name="ConcretePrototype2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="098cec53-f5f8-4c44-8b90-d0e708621dfe" />
+        <generalsInternal>
+          <generalization Id="45f7790b-67c8-47d4-89cd-e9c9ae988e4c" isSubstitutable="false">
+            <classMoniker Id="f5c16662-0c19-494c-aa5b-01b52c75cb03" LastKnownName="Prototype" />
+            <elementDefinition Id="89cb9bbc-e516-4f3c-b2ca-c6d0b5d72ee7" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="757bcf05-14f2-4165-85ef-6591de9e1223" name="Clone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b3219324-9218-480d-a45b-13d9ee676fde" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9b3380ee-bbcd-4359-90db-511d9134773d" direction="Return">
+                  <elementDefinition Id="5ed9c7b5-af65-43ad-a13a-a8fd75ff91e6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ad11ebe0-3d2c-4088-a407-913b691bb7bb" LastKnownName="Prototype" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="02c7c47c-345e-4811-88ef-acad437337ae" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="28501be5-bc48-4b26-9f82-f031db83bcbd" />
+        <targetEnds>
+          <association Id="0d29929c-99b3-4a82-97ad-ffe53ff1fa89" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Prototype" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f5c16662-0c19-494c-aa5b-01b52c75cb03" LastKnownName="Prototype" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62ca5918-3bde-456d-87c7-07fd2b2c592a" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a4e3cfde-8297-49f4-8c38-b098754419ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5612c99b-34f6-478b-bc3a-9c665cfdc00b" name="Prototype" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6fb36ec9-5aa5-477e-9ae7-a04ffa8c5840" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="379fc5ec-b4be-4a15-b025-282b623839eb" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="44969d8b-d3dd-4eb8-a1e9-a49d78c2df60" name="Operation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9aeb2d5e-afcb-4f90-bc33-ef3f4fb473e6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ee6abf55-f527-4841-a3c3-813ce32353a5" direction="Return">
+                  <elementDefinition Id="12ec697f-f265-4438-b738-aa88eedcbb1d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b226c14f-7ed9-46b1-8577-c6a53696b05e" LastKnownName="ProtoType" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="b226c14f-7ed9-46b1-8577-c6a53696b05e" name="ProtoType" isAbstract="false" isLeaf="false" cachedFullName="ProtoType">
+        <elementDefinition Id="c334a97b-15ad-453a-bfb9-df7ecb7a91c2" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a8204954-beb8-4b4f-bad2-2b9bdcd7f176" name="PrototypeModelingProject">
+    <elementDefinition Id="f6866e8d-6435-4b6c-87d8-514b821d7ba5" />
+  </package>
+</logicalClassDesignerModel>

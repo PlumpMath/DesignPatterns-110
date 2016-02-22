@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e032635a-e0d1-4c09-b156-013ca4c048ca" name="UMLClassDiagram" linkedPackageId="83aafc74-f494-4f44-b50a-735ec5386900" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f1e23d71-3147-4ca9-9f68-d62de34e7911">
+      <profileInstance Id="608f0eab-42cf-4513-aed4-29a84ad2cbe3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5f2e0cc4-ebdd-4d19-93b4-5cc0ed7c5b16">
+      <profileInstance Id="0041fff5-7b67-40ab-853f-99f592257324" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="60f0948b-6528-464c-a313-cbdd522bf394" name="Visitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="402f3891-1526-461f-94e2-cc871f863146" />
+        <ownedOperationsInternal>
+          <operation Id="e1bcbed4-77f8-4a55-a810-a7a784c82fa5" name="Visit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="19eac8be-f3e6-46df-9b94-3d9129d19872" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="9c8e8323-8f06-482e-b775-e678e0d89799" name="IEmployee" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a8a8e228-9605-4308-9356-19bdacb994c7" />
+        <ownedAttributes>
+          <property Id="fab03696-858e-4907-9e39-c6fee0ff71f3" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="80cf68af-557a-4d19-874a-2a20ba218eef" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="147a944d-6633-4e73-95d0-95caf6bf1e7a" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="57146ad5-92b1-48c7-860e-42b323bf3c0d" name="Wage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cdd03acf-0c84-4bb6-ae52-5cafc46bdc6f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b5b7c391-1d6c-44c7-995e-27444b77055b" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="1fdec3bf-9443-4a91-99ab-610d2632c00d" name="Accept" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2e3ed51e-bb69-4447-ae54-4835dbe16e07" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4bc42251-5889-49ce-acb2-0465986ebd91" name="visitor" direction="In">
+                  <elementDefinition Id="782f9ac6-e53d-4827-8601-8d100ac07345" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9d2790bc-2f74-48c8-b312-f9d5ad8956bd" LastKnownName="Visitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="9d2790bc-2f74-48c8-b312-f9d5ad8956bd" name="Visitor" isAbstract="false" isLeaf="false" cachedFullName="VisitorModelingProject::Visitor">
+        <elementDefinition Id="402f3891-1526-461f-94e2-cc871f863146" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="147a944d-6633-4e73-95d0-95caf6bf1e7a" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b5b7c391-1d6c-44c7-995e-27444b77055b" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="aaecd48b-f81e-400f-9983-2871a5a97165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="40be470e-4f4f-46fd-a0bd-0e89932606be" name="FulltimeEmployee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e3040b82-79e2-4817-be76-01a3d0f7fbed" />
+        <suppliersInternal>
+          <interfaceRealization Id="4ab38e6e-b792-4952-bd3d-ecc700ea7da9">
+            <interfaceMoniker Id="9c8e8323-8f06-482e-b775-e678e0d89799" LastKnownName="IEmployee" />
+            <elementDefinition Id="e80bfd6d-67a3-4e65-8a38-8b0a17257871" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="7484ca1d-c1c2-467b-8883-e63930e08c76" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="93661372-99e3-40ab-8a3d-4e89ee05959e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="42577e34-d099-4b60-8a14-ce6e10c849c7" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="4f0cace2-aa33-40f9-929d-bc3a3228c5be" name="Wage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9f7d89b2-c7b9-47e6-814e-5107d674ef2e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0dd7eb93-c296-41cb-97d9-9660fd9d1f2b" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7ffc95d4-0d53-4982-b358-9f92fec63e58" name="Accept" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c072e6b1-7cdc-4754-82aa-45b47f13bfdf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4347fd0b-c993-4ae2-bb00-cbefc46394aa" name="visitor" direction="In">
+                  <elementDefinition Id="056f70f7-fffa-4090-94b7-ac3aa722ba8e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3fa19a71-cb54-4ed9-93da-1128c467674f" LastKnownName="Visitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="732a3c31-1697-48ea-b14d-58f7516356c5" name="OperationFulltime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="17a5abc9-250b-4c7d-9ae2-20e7038f23c9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3fa19a71-cb54-4ed9-93da-1128c467674f" name="Visitor" isAbstract="false" isLeaf="false" cachedFullName="VisitorModelingProject::Visitor">
+        <elementDefinition Id="402f3891-1526-461f-94e2-cc871f863146" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="42577e34-d099-4b60-8a14-ce6e10c849c7" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0dd7eb93-c296-41cb-97d9-9660fd9d1f2b" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="aaecd48b-f81e-400f-9983-2871a5a97165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4d4e35f9-c619-4e84-917d-b051873c87aa" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="777d02b1-a6f1-47e2-a805-30d3a2dd5ee5" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="aaecd48b-f81e-400f-9983-2871a5a97165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c071d7c5-12df-4ab5-af71-74e157b4366c" name="Visitor" isAbstract="false" isLeaf="false" cachedFullName="VisitorModelingProject::Visitor">
+        <elementDefinition Id="402f3891-1526-461f-94e2-cc871f863146" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="025b1dd6-e593-43a6-9c5b-6f9cb650ad68" name="ParttimeEmployee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="18ee8f33-059f-4ebd-bf9b-3b76667666aa" />
+        <suppliersInternal>
+          <interfaceRealization Id="2b26e646-f74a-4c82-8418-72b097822154">
+            <interfaceMoniker Id="9c8e8323-8f06-482e-b775-e678e0d89799" LastKnownName="IEmployee" />
+            <elementDefinition Id="47aaaedf-83d9-4481-95b2-428f8d0a6e9e" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="b1968355-6381-4ca6-87ef-de0eee9fc9c2" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2d0aaf5e-342e-4bf5-882e-aa9eacdeadc2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4d4e35f9-c619-4e84-917d-b051873c87aa" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="072b7c2d-32c0-46c9-9e53-ce544537e8c3" name="Wage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3d24b8cd-d92a-4cb9-86c6-307c902e8ea8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="777d02b1-a6f1-47e2-a805-30d3a2dd5ee5" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5ef307a0-842a-44e0-80ba-38033fd668f2" name="Accept" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d1dcc35e-fe02-4823-972d-0ab6989347a9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ceeb4fe7-2941-43a4-82ef-5470d04523bc" name="visitor" direction="In">
+                  <elementDefinition Id="0a81d04a-da7b-4d43-b20e-eddbfdbe0fd4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c071d7c5-12df-4ab5-af71-74e157b4366c" LastKnownName="Visitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d0c1bde3-f18c-4c4e-85d9-d30528ed85a7" name="OperationFulltime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2bee0a55-15d5-4292-9278-a0adb82b8841" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d94f1e02-1ceb-418d-9451-50e416ccaa10" name="HrVisitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5822e1ac-53e5-4235-b090-7b9efaf99c44" />
+        <generalsInternal>
+          <generalization Id="1613b387-f96f-42ca-a0b8-b84ee8ac381b" isSubstitutable="false">
+            <classMoniker Id="60f0948b-6528-464c-a313-cbdd522bf394" LastKnownName="Visitor" />
+            <elementDefinition Id="75542d42-a3ab-4036-b680-aec4575f28e1" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="bd2ae8eb-bd96-4043-b355-3915cd97cfe8" name="Visit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="71ae0ed4-4e3c-4a0c-a967-7170224a7fb1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e54798c1-8662-40fd-9ab7-f42cea691829" name="FinanceVisitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3d5268d3-8faf-4295-a6c6-29f5f7616c1e" />
+        <generalsInternal>
+          <generalization Id="deb61e01-fe3a-48db-96bd-60e07f202f68" isSubstitutable="false">
+            <classMoniker Id="60f0948b-6528-464c-a313-cbdd522bf394" LastKnownName="Visitor" />
+            <elementDefinition Id="83e86a34-894d-4f8c-8938-bccad37d5e01" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="f077b8e3-345a-4160-935c-dc44d6b957c8" name="Visit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0bc09f88-859c-48b7-9e03-0cb0dd8316dd" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ddd5327a-d231-44c8-902c-c3ee5ff1443e" name="ObjectStructure" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4094ece4-96c3-43d6-88b0-d95b263a64c7" />
+        <targetEnds>
+          <association Id="20bec034-bec7-4f34-810b-0ecfbf800dc0" isDerived="false" sourceEndRoleName="ObjectStructure" targetEndRoleName="Visitor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="60f0948b-6528-464c-a313-cbdd522bf394" LastKnownName="Visitor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba2e7f50-2bcb-454c-bebe-24183ebf3974" name="ObjectStructure" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="70050382-2956-4fd9-b706-39becff056ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f5624e8e-413c-4f17-8722-0a6b8e279e9b" name="Visitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f3418d8-ff1a-4194-b866-e7285f914801" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="42d1a004-4516-4520-8287-c9870ca46916" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="77f2fee2-c125-48ae-a8ac-d337d2d84544" name="Accept" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c2c85276-ecd6-4450-96fe-cf6230d6a036" />
+          </operation>
+          <operation Id="0bfc6676-c049-43be-857c-9018d0a41d1f" name="AddEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2722f42d-58cb-4543-af78-4d6505117851" />
+          </operation>
+          <operation Id="925701e6-a9ce-4ce7-b4bf-6ce65d14fa6b" name="RemoveEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eb1fe603-d55d-4f8f-87a2-21a1c0d4f6b5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e18da750-aea0-45df-8e1b-4c829b5e0748" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f5eb64e9-55c5-440a-8351-a5785d0abd03" />
+        <suppliersInternal>
+          <dependency Id="0972324f-ef38-445f-99e5-99b5b3453db2">
+            <interfaceMoniker Id="9c8e8323-8f06-482e-b775-e678e0d89799" LastKnownName="IEmployee" />
+            <elementDefinition Id="1192ffc9-1a91-4fdd-abaa-d08bd4a360b3" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="c064a18d-a93e-42e2-a0b8-febc091ae735" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="ObjectStructure" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ddd5327a-d231-44c8-902c-c3ee5ff1443e" LastKnownName="ObjectStructure" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62f01939-8da7-49f5-9b19-a0490ae20627" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="09183d87-4a22-4abb-a92a-4ee3b824e7dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02e53738-f0b2-4a07-afb6-f2ce12d1837a" name="ObjectStructure" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="335b7ccd-12a9-4fd7-991b-060b824fa643" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="18b67814-25f0-4b40-abd6-79a0fbfc4beb" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="83aafc74-f494-4f44-b50a-735ec5386900" name="VisitorModelingProject">
+    <elementDefinition Id="c7cf592a-bce5-4538-8afd-e3fc8aca5736" />
+  </package>
+</logicalClassDesignerModel>

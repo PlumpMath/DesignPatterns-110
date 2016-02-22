@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="6aeaf282-95e9-44ef-ba4a-d7bcc285439f" name="UMLClassDiagram" linkedPackageId="acd702fd-4a88-4d17-9c4e-987216a4e51e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="53bacbbf-cc3c-4b9c-bb21-e95c3a5f515c">
+      <profileInstance Id="0285b3dc-666b-45f7-90cd-11ecdcee62c8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="532fee4d-d86e-4118-a2a7-e5bd32d23496">
+      <profileInstance Id="6cab2532-72a0-4073-9725-3d079fa64901" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="31cec150-7474-4caf-9c91-b8d258dc4c0f" name="Handler" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ab3b224b-4599-4887-aef4-f6fe1f2e1544" />
+        <targetEnds>
+          <association Id="1e1964af-f987-48c1-b0de-b6b7a506a008" isDerived="false" sourceEndRoleName="Handler" targetEndRoleName="Handler" isLeaf="false" isAbstract="false">
+            <classMoniker Id="31cec150-7474-4caf-9c91-b8d258dc4c0f" LastKnownName="Handler" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1195a0b-3670-433a-8237-fe0c3c0c6719" name="Handler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8832925c-3c48-4a5c-bbd7-2e08fc792ab5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b86fc8b2-a4f8-4310-8dfb-62a18112193a" name="Handler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5dcc31ca-2df6-4298-bd0d-e8862d610192" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dd4e1ded-1736-480d-9c4d-18e4a45a6a60" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="041e9ec3-5ea9-4aee-80e0-5b265065c915" name="successor" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="620213c8-1773-4957-bf54-a3db05e9709f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b008bac6-508a-46e0-b7b0-cb1fd6e84f95" LastKnownName="Handler" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a6a196a6-ff00-4a5c-8c09-25f34b6d3f3f" name="SetSuccessor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="239b0cff-b355-4be4-a796-066caf83d570" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f6e7b9d4-6ba6-4ef5-a326-16bd905689c7" name="successor" direction="In">
+                  <elementDefinition Id="1725b8a0-0fa0-4f81-9447-29321da5cfa9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b008bac6-508a-46e0-b7b0-cb1fd6e84f95" LastKnownName="Handler" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="888dcd03-1739-40a4-aeba-e06de5b6781b" name="HandleRequest" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1b8acc38-d8c0-4f8c-be04-3a393f5ec619" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b2770b2f-627f-48aa-afc0-41e183d7edd6" name="request" direction="In">
+                  <elementDefinition Id="52c1e470-e8c3-4474-8500-93921c211ec1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c4cd0a0e-8ea4-4891-88f4-bd5a1f4091c8" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="b008bac6-508a-46e0-b7b0-cb1fd6e84f95" name="Handler" isAbstract="false" isLeaf="false" cachedFullName="ChainOfResponsibilityModelingProject::Handler">
+        <elementDefinition Id="ab3b224b-4599-4887-aef4-f6fe1f2e1544" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f223de4f-8fa5-4993-9658-789e28733f0b" name="ConcreteHandler1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="565adfeb-5200-44bb-a1a0-e06e805c7a09" />
+        <generalsInternal>
+          <generalization Id="c448b24b-1c4f-4687-a350-63cbdb1de9f7" isSubstitutable="false">
+            <classMoniker Id="31cec150-7474-4caf-9c91-b8d258dc4c0f" LastKnownName="Handler" />
+            <elementDefinition Id="736ca3db-5927-41d9-a870-02ff8803fa40" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="f53193cc-9584-45f3-86ed-d66f3e2b3650" name="HandleRequest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d3f66d58-a778-40be-b662-32bd1a0e4ce6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f91ae430-0839-4b6d-bdc9-2570c6a0d977" name="request" direction="In">
+                  <elementDefinition Id="a969f4eb-181a-4b66-8352-a60bf31786b4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c4cd0a0e-8ea4-4891-88f4-bd5a1f4091c8" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c4cd0a0e-8ea4-4891-88f4-bd5a1f4091c8" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="cdea588d-e8f0-40f9-b067-7d5eec26f258" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b95face2-a407-405f-9fa1-4f0fa01f0196" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="cdea588d-e8f0-40f9-b067-7d5eec26f258" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="68d4743d-3895-4de3-80ae-4cb3388764e1" name="ConcreteHandler2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2069c6ec-8701-4953-98c5-fecde407a414" />
+        <generalsInternal>
+          <generalization Id="06c738a3-5e21-481c-9146-91ac0e1723cb" isSubstitutable="false">
+            <classMoniker Id="31cec150-7474-4caf-9c91-b8d258dc4c0f" LastKnownName="Handler" />
+            <elementDefinition Id="0d8737e2-2432-4b6f-a79e-9f76bc3d13db" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="bc50ed6a-7fe4-475d-88b5-98bd74dcd769" name="HandleRequest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a83fffe1-d4ff-477e-a712-13c58e68e51e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="537f8050-e7ca-40a9-a9c3-3e93a608f44a" name="request" direction="In">
+                  <elementDefinition Id="4071c045-b396-47dd-8708-ca5a42b4c459" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b95face2-a407-405f-9fa1-4f0fa01f0196" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="acd702fd-4a88-4d17-9c4e-987216a4e51e" name="ChainOfResponsibilityModelingProject">
+    <elementDefinition Id="b7b843ec-bb05-46b5-b23b-33ffe34796b6" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="93380b0e-e4d2-4306-bbbf-01d8fad7abdc"
+  name="SimpleFactoryModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="6eb6beca-4db0-4dd3-95f6-010ed0d12b91"
+        name="IProduct"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b83ec0d1-4140-44f1-9c1d-0a70ba607ac5"
+        name="ConcreteProductA"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="3c6c4cd1-d991-40b1-a872-40cf4dc95d92">
+            <interfaceMoniker
+              Id="6eb6beca-4db0-4dd3-95f6-010ed0d12b91"
+              LastKnownName="IProduct"
+              LastKnownLocation="SimpleFactoryModelingProject.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6ece1903-7d7a-444a-9af6-7ea9592bfae8"
+        name="ConcreteProductB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="87ee399c-0669-446a-8cd5-a9e485271876">
+            <interfaceMoniker
+              Id="6eb6beca-4db0-4dd3-95f6-010ed0d12b91"
+              LastKnownName="IProduct"
+              LastKnownLocation="SimpleFactoryModelingProject.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d2ab257e-42d8-4046-b21f-b44307b8d519"
+        name="Factory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="569e611f-e2a0-409e-aca4-7fc5a6076593">
+            <classMoniker
+              Id="b83ec0d1-4140-44f1-9c1d-0a70ba607ac5"
+              LastKnownName="ConcreteProductA"
+              LastKnownLocation="SimpleFactoryModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="39750adb-d76b-4198-8b08-811f7b102460">
+            <classMoniker
+              Id="6ece1903-7d7a-444a-9af6-7ea9592bfae8"
+              LastKnownName="ConcreteProductB"
+              LastKnownLocation="SimpleFactoryModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5ae76fa3-9774-441e-86f2-096d27a27a83"
+            name="CreateProduct"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d074e5b7-4663-40e7-aa98-eb8fac980923"
+                  name="string arg"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9e4f54a7-54c0-4392-b073-508b14bfa3b5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a938818a-2a2c-4a9c-a20b-7067522622a7"
+                      LastKnownName="Product"
+                      LastKnownLocation="SimpleFactoryModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a938818a-2a2c-4a9c-a20b-7067522622a7"
+        name="Product" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
