@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "SimpleFactory\SimpleFactory.csproj", "{245F67B8-4EA9-4BD9-9C66-B7FDC74836FA}"
 EndProject
@@ -107,58 +107,58 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "23-Visitor(访问者模式)
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Design Discipline(设计原则)", "00.Design Discipline(设计原则)", "{A1B7B123-927E-4A4C-B09A-2308F5AA4467}"
 	ProjectSection(SolutionItems) = preProject
-		0.Document.txt = 0.Document.txt
-		1.单一职责原则（Single Responsibility Principle）.txt = 1.单一职责原则（Single Responsibility Principle）.txt
-		2.开闭原则（Open Close Principle）.txt = 2.开闭原则（Open Close Principle）.txt
-		3.里氏替换原则（Liskov Substitution Principle）.txt = 3.里氏替换原则（Liskov Substitution Principle）.txt
-		4.接口隔离原则（Interface Segregation Principle）.txt = 4.接口隔离原则（Interface Segregation Principle）.txt
-		5.依赖倒置原则（Dependence Inversion Principle）.txt = 5.依赖倒置原则（Dependence Inversion Principle）.txt
-		6.迪米特法则（Low Of Demeter）.txt = 6.迪米特法则（Low Of Demeter）.txt
+		..\Doc\0.Document.txt = ..\Doc\0.Document.txt
+		..\Doc\1.单一职责原则（Single Responsibility Principle）.txt = ..\Doc\1.单一职责原则（Single Responsibility Principle）.txt
+		..\Doc\2.开闭原则（Open Close Principle）.txt = ..\Doc\2.开闭原则（Open Close Principle）.txt
+		..\Doc\3.里氏替换原则（Liskov Substitution Principle）.txt = ..\Doc\3.里氏替换原则（Liskov Substitution Principle）.txt
+		..\Doc\4.接口隔离原则（Interface Segregation Principle）.txt = ..\Doc\4.接口隔离原则（Interface Segregation Principle）.txt
+		..\Doc\5.依赖倒置原则（Dependence Inversion Principle）.txt = ..\Doc\5.依赖倒置原则（Dependence Inversion Principle）.txt
+		..\Doc\6.迪米特法则（Low Of Demeter）.txt = ..\Doc\6.迪米特法则（Low Of Demeter）.txt
 	EndProjectSection
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SimpleFactoryModelingProject", "SimpleFactoryModelingProject\SimpleFactoryModelingProject.modelproj", "{02EEFD15-B7EA-450E-AA93-BD4C0D173D5C}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SimpleFactoryModelingProject", "..\UML\SimpleFactoryModelingProject\SimpleFactoryModelingProject.modelproj", "{02EEFD15-B7EA-450E-AA93-BD4C0D173D5C}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "FactoryMethodModelingProject", "FactoryMethodModelingProject\FactoryMethodModelingProject.modelproj", "{433AB821-BD85-4846-9DF0-376515C60CF4}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "FactoryMethodModelingProject", "..\UML\FactoryMethodModelingProject\FactoryMethodModelingProject.modelproj", "{433AB821-BD85-4846-9DF0-376515C60CF4}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "AbstractFactoryModelingProject", "AbstractFactoryModelingProject\AbstractFactoryModelingProject.modelproj", "{632E9FB7-8D53-4130-BEE3-409B3C7084E7}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "AbstractFactoryModelingProject", "..\UML\AbstractFactoryModelingProject\AbstractFactoryModelingProject.modelproj", "{632E9FB7-8D53-4130-BEE3-409B3C7084E7}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SingletonModelingProject", "SingletonModelingProject\SingletonModelingProject.modelproj", "{5B069211-65AC-4010-868F-A10CB32C82B2}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SingletonModelingProject", "..\UML\SingletonModelingProject\SingletonModelingProject.modelproj", "{5B069211-65AC-4010-868F-A10CB32C82B2}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "PrototypeModelingProject", "PrototypeModelingProject\PrototypeModelingProject.modelproj", "{0890FA91-0162-43F1-B5D0-2C023EED1AB9}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "PrototypeModelingProject", "..\UML\PrototypeModelingProject\PrototypeModelingProject.modelproj", "{0890FA91-0162-43F1-B5D0-2C023EED1AB9}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "BuilderModelingProject", "BuilderModelingProject\BuilderModelingProject.modelproj", "{F8B96946-9DFD-4A7F-807E-5FB6D2BB25DA}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "BuilderModelingProject", "..\UML\BuilderModelingProject\BuilderModelingProject.modelproj", "{F8B96946-9DFD-4A7F-807E-5FB6D2BB25DA}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "AdapterModelingProject", "AdapterModelingProject\AdapterModelingProject.modelproj", "{9DB081F8-C765-45BB-BD84-0F3E9B93AEC6}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "AdapterModelingProject", "..\UML\AdapterModelingProject\AdapterModelingProject.modelproj", "{9DB081F8-C765-45BB-BD84-0F3E9B93AEC6}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "BridgeModelingProject", "BridgeModelingProject\BridgeModelingProject.modelproj", "{AC569965-31C1-4888-8585-12E378FB896F}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "BridgeModelingProject", "..\UML\BridgeModelingProject\BridgeModelingProject.modelproj", "{AC569965-31C1-4888-8585-12E378FB896F}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "CompositeModelingProject", "CompositeModelingProject\CompositeModelingProject.modelproj", "{1765FF35-86CD-43F8-83F2-FECD78009EA8}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "CompositeModelingProject", "..\UML\CompositeModelingProject\CompositeModelingProject.modelproj", "{1765FF35-86CD-43F8-83F2-FECD78009EA8}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "DecoratorModelingProject", "DecoratorModelingProject\DecoratorModelingProject.modelproj", "{D1957DE0-2C21-4F74-A0FF-A5371B275740}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "DecoratorModelingProject", "..\UML\DecoratorModelingProject\DecoratorModelingProject.modelproj", "{D1957DE0-2C21-4F74-A0FF-A5371B275740}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "FacadeModelingProject", "FacadeModelingProject\FacadeModelingProject.modelproj", "{634016EC-07AE-4683-807A-693128A6E983}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "FacadeModelingProject", "..\UML\FacadeModelingProject\FacadeModelingProject.modelproj", "{634016EC-07AE-4683-807A-693128A6E983}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ProxyModelingProject", "ProxyModelingProject\ProxyModelingProject.modelproj", "{CC463B75-7D20-43E3-876C-F545B4991096}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ProxyModelingProject", "..\UML\ProxyModelingProject\ProxyModelingProject.modelproj", "{CC463B75-7D20-43E3-876C-F545B4991096}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ChainOfResponsibilityModelingProject", "ChainOfResponsibilityModelingProject\ChainOfResponsibilityModelingProject.modelproj", "{6D4E8FE4-9A97-45D1-9B7A-F9D1346D7BA1}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ChainOfResponsibilityModelingProject", "..\UML\ChainOfResponsibilityModelingProject\ChainOfResponsibilityModelingProject.modelproj", "{6D4E8FE4-9A97-45D1-9B7A-F9D1346D7BA1}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "CommandModelingProject", "CommandModelingProject\CommandModelingProject.modelproj", "{F92A4566-5D4D-43CF-8448-44B179AED354}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "CommandModelingProject", "..\UML\CommandModelingProject\CommandModelingProject.modelproj", "{F92A4566-5D4D-43CF-8448-44B179AED354}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "IteratorModelingProject", "IteratorModelingProject\IteratorModelingProject.modelproj", "{E9A6443C-60A9-442C-974A-2F06402BDA8B}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "IteratorModelingProject", "..\UML\IteratorModelingProject\IteratorModelingProject.modelproj", "{E9A6443C-60A9-442C-974A-2F06402BDA8B}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "MediatorModelingProject", "MediatorModelingProject\MediatorModelingProject.modelproj", "{0952ABC4-ED2B-48D0-A15F-6D9A2961C392}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "MediatorModelingProject", "..\UML\MediatorModelingProject\MediatorModelingProject.modelproj", "{0952ABC4-ED2B-48D0-A15F-6D9A2961C392}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "MementoModelingProject", "MementoModelingProject\MementoModelingProject.modelproj", "{0EF5E0F4-55F5-4538-B80D-9DDD73DD44E2}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "MementoModelingProject", "..\UML\MementoModelingProject\MementoModelingProject.modelproj", "{0EF5E0F4-55F5-4538-B80D-9DDD73DD44E2}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ObserverModelingProject", "ObserverModelingProject\ObserverModelingProject.modelproj", "{DDD89152-6225-4B23-A7C0-D5FAA5B14393}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ObserverModelingProject", "..\UML\ObserverModelingProject\ObserverModelingProject.modelproj", "{DDD89152-6225-4B23-A7C0-D5FAA5B14393}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "StateModelingProject", "StateModelingProject\StateModelingProject.modelproj", "{B0A62572-B598-46F6-97DA-9F847167C908}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "StateModelingProject", "..\UML\StateModelingProject\StateModelingProject.modelproj", "{B0A62572-B598-46F6-97DA-9F847167C908}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "StrategyModelingProject", "StrategyModelingProject\StrategyModelingProject.modelproj", "{73035F8D-8B1F-4D67-A922-7F1C95D719E4}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "StrategyModelingProject", "..\UML\StrategyModelingProject\StrategyModelingProject.modelproj", "{73035F8D-8B1F-4D67-A922-7F1C95D719E4}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TemplateMethodModelingProject", "TemplateMethodModelingProject\TemplateMethodModelingProject.modelproj", "{6F65FD8B-848D-4E82-A1A0-9866156C1E69}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TemplateMethodModelingProject", "..\UML\TemplateMethodModelingProject\TemplateMethodModelingProject.modelproj", "{6F65FD8B-848D-4E82-A1A0-9866156C1E69}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "VisitorModelingProject", "VisitorModelingProject\VisitorModelingProject.modelproj", "{70D1D737-5C46-42A0-A316-A49AD8D952A4}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "VisitorModelingProject", "..\UML\VisitorModelingProject\VisitorModelingProject.modelproj", "{70D1D737-5C46-42A0-A316-A49AD8D952A4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Data Access Patterns(数据访问模式)", "04.Data Access Patterns(数据访问模式)", "{A04AC01B-0EB8-4C17-9E4E-E672FD793FC7}"
 EndProject
@@ -371,34 +371,16 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5CE7AFBF-9D8B-4A03-9275-5922A3D40D72} = {10FB6DD2-DC99-4487-991E-1362F7678002}
 		{C86A75B2-B66E-4CC0-8FE8-E6BA3C0E6E41} = {10FB6DD2-DC99-4487-991E-1362F7678002}
+		{5CE7AFBF-9D8B-4A03-9275-5922A3D40D72} = {10FB6DD2-DC99-4487-991E-1362F7678002}
 		{E8FF8537-8C4A-495B-9D99-754A380F5BB6} = {10FB6DD2-DC99-4487-991E-1362F7678002}
 		{36826B8E-FC1A-45AA-94A1-21B5ED2E0891} = {10FB6DD2-DC99-4487-991E-1362F7678002}
 		{EE20CCD7-CA40-4579-B77C-D199D8ADE658} = {10FB6DD2-DC99-4487-991E-1362F7678002}
 		{59E6FB1E-6FC9-42D6-9DD2-2384095C34E0} = {10FB6DD2-DC99-4487-991E-1362F7678002}
-		{A2D0A9E5-C217-4F80-A1C2-B0688C76F919} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
-		{2FE7A488-DCB7-4164-8870-195A9DD4A3D0} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
-		{781CDD50-2272-4533-BE92-030B0EC79157} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
-		{21B88FC0-5CB7-4E68-9F52-C19D5A2CCDB1} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
-		{41ADB3B1-E04F-4303-AC89-D1246BA6D0D8} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
-		{14EA27C0-5DB9-45CF-AA29-6D52B567EDB9} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
-		{D5FCEB14-BFEA-4CB8-B43F-A3745268D4CC} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
-		{752EA3DA-4902-4571-8305-367DA3385593} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{C89ED85B-DD9A-4B76-B1EC-A5341650D3FC} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{BAA17998-C4A7-4BF7-93A8-F99A4DBA5CA5} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{3C8A603B-876A-46F0-9747-5654DA57D334} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{E01F4C62-8612-4119-9B42-8B0FF427A35B} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{752DA96F-20B5-4735-820F-8E8AD66C3910} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{EDF13FD8-E748-47A7-A150-AB3683926E43} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{826ECD4D-1031-46B2-BA41-8C0B063B80F0} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{FBDB9601-2DBF-4995-ADAB-FB5C0A2668D3} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{B158406C-C458-47A6-B705-86809DA51FC8} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{589266C4-258C-4C77-9C91-B83C4285A970} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
-		{245F67B8-4EA9-4BD9-9C66-B7FDC74836FA} = {5CE7AFBF-9D8B-4A03-9275-5922A3D40D72}
-		{02EEFD15-B7EA-450E-AA93-BD4C0D173D5C} = {5CE7AFBF-9D8B-4A03-9275-5922A3D40D72}
 		{07492CA4-F9D7-4237-ABB7-18A62E308289} = {C86A75B2-B66E-4CC0-8FE8-E6BA3C0E6E41}
 		{632E9FB7-8D53-4130-BEE3-409B3C7084E7} = {C86A75B2-B66E-4CC0-8FE8-E6BA3C0E6E41}
+		{245F67B8-4EA9-4BD9-9C66-B7FDC74836FA} = {5CE7AFBF-9D8B-4A03-9275-5922A3D40D72}
+		{02EEFD15-B7EA-450E-AA93-BD4C0D173D5C} = {5CE7AFBF-9D8B-4A03-9275-5922A3D40D72}
 		{50298F40-7FDA-494B-920E-A7DFBA6F79B8} = {E8FF8537-8C4A-495B-9D99-754A380F5BB6}
 		{F8B96946-9DFD-4A7F-807E-5FB6D2BB25DA} = {E8FF8537-8C4A-495B-9D99-754A380F5BB6}
 		{2B386C86-DF5C-4CE5-9550-6ABC412571D1} = {36826B8E-FC1A-45AA-94A1-21B5ED2E0891}
@@ -407,6 +389,13 @@ Global
 		{0890FA91-0162-43F1-B5D0-2C023EED1AB9} = {EE20CCD7-CA40-4579-B77C-D199D8ADE658}
 		{515D14B0-ABC5-4B2D-AC5C-1EF8A50E957C} = {59E6FB1E-6FC9-42D6-9DD2-2384095C34E0}
 		{5B069211-65AC-4010-868F-A10CB32C82B2} = {59E6FB1E-6FC9-42D6-9DD2-2384095C34E0}
+		{A2D0A9E5-C217-4F80-A1C2-B0688C76F919} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
+		{2FE7A488-DCB7-4164-8870-195A9DD4A3D0} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
+		{781CDD50-2272-4533-BE92-030B0EC79157} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
+		{21B88FC0-5CB7-4E68-9F52-C19D5A2CCDB1} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
+		{41ADB3B1-E04F-4303-AC89-D1246BA6D0D8} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
+		{14EA27C0-5DB9-45CF-AA29-6D52B567EDB9} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
+		{D5FCEB14-BFEA-4CB8-B43F-A3745268D4CC} = {D150644F-B139-4BD4-83DE-310D17EFB38F}
 		{E5A60430-8C94-414B-94E5-A410D93A4C47} = {A2D0A9E5-C217-4F80-A1C2-B0688C76F919}
 		{9DB081F8-C765-45BB-BD84-0F3E9B93AEC6} = {A2D0A9E5-C217-4F80-A1C2-B0688C76F919}
 		{53C95ECD-2EB1-42FE-9EA8-30E916EDB28D} = {2FE7A488-DCB7-4164-8870-195A9DD4A3D0}
@@ -420,6 +409,17 @@ Global
 		{53FC8398-9CE8-408B-9713-BDB9BB928318} = {14EA27C0-5DB9-45CF-AA29-6D52B567EDB9}
 		{57B54D64-C082-47C8-B5F7-0D522426AE88} = {D5FCEB14-BFEA-4CB8-B43F-A3745268D4CC}
 		{CC463B75-7D20-43E3-876C-F545B4991096} = {D5FCEB14-BFEA-4CB8-B43F-A3745268D4CC}
+		{752EA3DA-4902-4571-8305-367DA3385593} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{C89ED85B-DD9A-4B76-B1EC-A5341650D3FC} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{BAA17998-C4A7-4BF7-93A8-F99A4DBA5CA5} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{3C8A603B-876A-46F0-9747-5654DA57D334} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{E01F4C62-8612-4119-9B42-8B0FF427A35B} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{752DA96F-20B5-4735-820F-8E8AD66C3910} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{EDF13FD8-E748-47A7-A150-AB3683926E43} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{826ECD4D-1031-46B2-BA41-8C0B063B80F0} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{FBDB9601-2DBF-4995-ADAB-FB5C0A2668D3} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{B158406C-C458-47A6-B705-86809DA51FC8} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
+		{589266C4-258C-4C77-9C91-B83C4285A970} = {34B83A6F-0747-4312-961F-C716AF48BE8F}
 		{A401FE32-A9DB-407D-B7E4-0B2FF5CDD91E} = {752EA3DA-4902-4571-8305-367DA3385593}
 		{6D4E8FE4-9A97-45D1-9B7A-F9D1346D7BA1} = {752EA3DA-4902-4571-8305-367DA3385593}
 		{713BA3A8-435E-499D-B8E1-99F065822F4D} = {C89ED85B-DD9A-4B76-B1EC-A5341650D3FC}
